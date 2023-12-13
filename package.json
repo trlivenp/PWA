@@ -4,11 +4,11 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server/server.js",
-    "server": "",
+    "start": "concurrently \"npm run start-client\" \"npm run start-server\"",
+    "server": "node server.js",
     "build": "",
     "install": "",
-    "client": ""
+    "client": "cd client && npm start"
   },
   "keywords": [],
   "author": "",
