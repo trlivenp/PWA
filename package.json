@@ -2,11 +2,10 @@
   "name": "JATE",
   "version": "1.0.0",
   "description": "",
-  "main": "Develop\\server\\server.js",
+  "main": "server.js",
   "scripts": {
-    "start:dev": "concurrently \"npm run server\" \"npm run client\"",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "node server.js",
+    "start": "node server/server.js",
+    "server": "",
     "build": "",
     "install": "",
     "client": ""
