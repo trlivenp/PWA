@@ -1,11 +1,12 @@
 const butInstall = document.getElementById('buttonInstall');
+let deferredPrompt; // Declare the variable outside the event listener
 
 // TODO: Add an event handler to the `beforeinstallprompt` event
 window.addEventListener('beforeinstallprompt', (event) => {
   // Prevent the default behavior
   event.preventDefault();
   // Store the event for later use
-  let deferredPrompt = event;
+  deferredPrompt = event;
 
   // Update UI to notify the user to install the PWA
   // You can customize this part based on your UI requirements
@@ -32,3 +33,4 @@ window.addEventListener('appinstalled', (event) => {
   // Log that the PWA was successfully installed
   console.log('PWA was installed');
 });
+
